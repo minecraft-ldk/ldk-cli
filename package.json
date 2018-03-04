@@ -1,0 +1,26 @@
+{
+  "name": "ldk-cli",
+  "version": "1.0.0",
+  "description": "Minecraft launcher development kit cli",
+  "bin": {
+    "ldk": "main.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minecraft-ldk/ldk.git"
+  },
+  "keywords": [
+    "minecraft",
+    "launcher",
+    "litarvan"
+  ],
+  "author": "Adrien 'Litarvan' Navratil <adrien1975@live.fr>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/minecraft-ldk/ldk/issues"
+  },
+  "homepage": "https://github.com/minecraft-ldk/ldk#readme"
+}
