@@ -16,9 +16,26 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-function bootstrap()
-{
+const fs = require('fs');
+const mkdir = require('mkdirp').sync;
 
+function bootstrap([os, path])
+{
+    if (!os || (os !== 'windows' && os !== 'mac' && os !== 'linux'))
+    {
+        console.error('Usage : ldk bootstrap <windows/mac/linux> [path]');
+        return;
+    }
+
+    if (!path)
+    {
+        path = './dist/bootstrap';
+    }
+
+    mkdir(path);
+    path = fs.realpathSync(path);
+
+    console.log(`Exporting bootstrap for '${os}' at '${path}'`)
 }
 
 module.exports = bootstrap;

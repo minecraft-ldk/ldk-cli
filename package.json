@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/minecraft-ldk/ldk/issues"
   },
-  "homepage": "https://github.com/minecraft-ldk/ldk#readme"
+  "homepage": "https://github.com/minecraft-ldk/ldk#readme",
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
 }
